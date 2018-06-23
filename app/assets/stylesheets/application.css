@@ -14,8 +14,20 @@
  *= require_self
  */
 
+body{
+}
 #trump_tweets_div{
-  width: 50%;
+  float: left;
+  width: 45%;
+  height: 50%;
+  outline-style: solid;
+  outline-color: black;
+  outline-width: 5px;
+}
+
+#monthly_tweet_info{
+  float: right;
+  width: 45%;
   height: 50%;
   outline-style: solid;
   outline-color: black;
