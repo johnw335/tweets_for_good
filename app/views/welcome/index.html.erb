@@ -10,7 +10,12 @@
 </div>
 
 <div id='monthly_tweet_info'>
-  This is gong to display the monthly information about number of tweets as well as ther classification
+  <ul>
+  <% TwitterApi.our_public_tweets.each do |tweet| %>
+    <li><%=tweet.text %></li>
+  <% end %>
+
+</ul>
 </div>
 
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8">
