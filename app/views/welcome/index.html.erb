@@ -11,11 +11,18 @@
 
 <div id='monthly_tweet_info'>
   <ul>
-  <% TwitterApi.our_public_tweets.each do |tweet| %>
-    <li><%=tweet.text %></li>
-  <% end %>
+    <% TwitterApi.our_public_tweets.each do |tweet| %>
+      <li><%=tweet.text %></li>
+    <% end %>
+  </ul>
+</div>
 
-</ul>
+<div id='monthly_tweet_info'>
+  <ul>
+    <% TwitterApi.our_public_tweets.each do |tweet| %>
+      <li><%=tweet.user.name %></li>
+    <% end %>
+  </ul>
 </div>
 
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8">

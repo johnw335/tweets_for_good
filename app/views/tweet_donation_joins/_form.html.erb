@@ -1,0 +1,17 @@
+<%= form_with(model: tweet_donation_join, local: true) do |form| %>
+  <% if tweet_donation_join.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(tweet_donation_join.errors.count, "error") %> prohibited this tweet_donation_join from being saved:</h2>
+
+      <ul>
+      <% tweet_donation_join.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
