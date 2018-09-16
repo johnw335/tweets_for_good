@@ -15,5 +15,5 @@ immigration_tweet = Tweet.create!(body: 'test tweet attacking immigrants', class
 
 women_tweet = Tweet.create!(body: 'test tweet attacking women', classification: women, tweeted_at: Time.now )
 
-# Tweet_donation_join.create!(user: test_user, tweet: immigration_tweet)
-# Tweet_donation_join.create!(user: test_user, tweet: woman_tweet)
+TweetDonationJoin.create!(user: test_user, tweet: immigration_tweet)
+TweetDonationJoin.create!(user: test_user, tweet: women_tweet)
